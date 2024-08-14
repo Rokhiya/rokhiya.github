@@ -1,0 +1,83 @@
+
+html {
+  height: 100%;
+  background: radial-gradient(pink, rgb(136, 136, 198));
+  line-height: 1.6;
+}
+
+/* Barre de navigation */
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0; /* Réduit le padding pour une meilleure apparence */
+}
+
+nav ul {
+  list-style: none; /* Retirer les puces des listes */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(7, 7, 7, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.41) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px; /* Ajoute un petit espacement entre les éléments de menu */
+}
+
+nav ul li a {
+  padding: 15px; /* Réduit le padding pour une meilleure adaptabilité */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: rgba(32, 63, 106, 0.7); /* Légèrement plus opaque pour une meilleure lisibilité */
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s, color 0.3s; /* Ajoute une transition douce */
+}
+
+nav ul li a:hover {
+  background: rgba(246, 246, 249, 0.1);
+  color: rgba(3, 3, 3, 0.9); /* Rendre le texte plus sombre au survol */
+}
+
+/* Intro */
+
+.intro {
+  max-width: 750px; /* Utiliser max-width pour éviter que le texte ne s'étire trop sur des écrans larges */
+  margin: 110px auto; /* Centrer le texte horizontalement */
+  text-align: justify;
+  font-size: 17px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgba(42, 35, 42, 0.741);
+  padding: 20px; /* Ajouter du padding pour un espacement interne */
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 10px 0;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block; /* Les éléments de menu s'empilent verticalement */
+    margin: 5px 0;
+  }
+
+  nav ul li a {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .intro {
+    margin: 20px auto; /* Réduit l'espacement en haut et en bas */
+    width: 90%; /* Réduit la largeur sur les petits écrans */
+    font-size: 15px;
+  }
+}

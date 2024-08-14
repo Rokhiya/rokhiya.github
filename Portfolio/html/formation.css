@@ -1,0 +1,147 @@
+/* Styles généraux */
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(6, 6, 6);
+}
+
+html {
+  height: 120%;
+}
+
+p {
+  float: left;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Menu */
+nav {
+  max-width: 9000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: radial-gradient(rgba(210, 210, 134, 0.951), #ba7777);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: rgba(32, 63, 106, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: rgba(246, 246, 249, 0.1);
+  color: rgba(3, 3, 3, 0.7);
+}
+
+/* Mon projet de formation */
+.titre {
+  background: linear-gradient(rgb(214, 214, 100), #cb6d6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  text-align: center;
+  padding: -100px;
+  padding-right: 100px;
+  margin-top: 40px;
+  margin-left: 110px;
+}
+
+/* Les titres */
+h3 {
+  background: radial-gradient(rgb(210, 210, 134), #ba7777);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: lighter;
+}
+
+/* Apres BTS SIO - Competences */
+.titre1 {
+  border: 2px rgb(33, 32, 32) transparent;
+  width: 250px;
+  margin-left: 250px;
+  margin-top: 150px;
+}
+
+.etudes {
+  border: solid 2px transparent;
+  height: 100px;
+  width: 450px;
+  text-align: justify;
+  margin-left: 110px;
+  color: rgb(128, 127, 127);
+  margin-top: 50px;
+}
+
+/* Métiers plus tard */
+.titre2 {
+  border: 2px rgb(33, 32, 32) transparent;
+  width: 150px;
+  margin-left: 1000px;
+  margin-top: -180px;
+}
+
+.metiers {
+  border: solid 2px transparent;
+  height: 100px;
+  width: 450px;
+  text-align: justify;
+  margin-left: 850px;
+  color: rgb(128, 127, 127);
+  margin-top: 50px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  /* Ajustements pour les tablettes */
+  .titre, .titre1, .titre2 {
+      margin-left: 0;
+      text-align: center;
+  }
+  .etudes, .metiers {
+      width: 90%;
+      margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Ajustements pour les téléphones */
+  nav ul li {
+      display: block;
+      text-align: center;
+      margin: 10px 0;
+  }
+  
+  nav ul li a {
+      padding: 10px;
+      font-size: 16px;
+  }
+
+  .titre, .titre1, .titre2 {
+      font-size: 24px;
+      margin-left: 0;
+      text-align: center;
+  }
+  
+  .etudes, .metiers {
+      width: 100%;
+      margin: 10px auto;
+      padding: 10px;
+      font-size: 14px;
+  }
+}

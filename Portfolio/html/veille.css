@@ -1,0 +1,166 @@
+
+body { 
+  color: #292f36;
+  font-family: helvetica;
+  line-height: 1.6;
+}
+
+html {
+  height: 200%;
+  background: radial-gradient(rgb(240, 227, 229), rgb(77, 77, 237));
+}
+
+ /* Rokhiya Touré*/
+
+p{
+    float: left;
+    margin-top: 2%;
+    margin-left: 1%;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+/*Menu*/
+
+nav {
+    max-width: 9000px;
+    margin: 0 auto;
+    padding: 2% 0;
+  }
+  
+  nav ul {
+    text-align: center;
+    background: radial-gradient(rgba(214, 214, 169, 0.951), #69a2f6);
+    
+  }
+ 
+  nav ul li {
+    display: inline-block;
+  }
+  
+  /* Styles existants */
+
+nav ul li a {
+  padding: 17px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: rgba(32, 63, 106, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: rgba(246, 246, 249, 0.1);
+  color: rgba(3, 3, 3, 0.7);
+}
+
+.veille { 
+  margin: 0 auto;
+  padding: 4rem 0;
+  width: 960px;
+  max-width: 100%;
+  text-align: justify;
+}
+
+p img {
+  max-width: 100%;
+  height: auto; /* Modification pour rendre les images plus flexibles */
+}
+
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgba(13, 13, 92, 0.814);
+}
+
+.explication1 {
+  padding: 5%;
+}
+
+u {
+  color: blanchedalmond;
+}
+
+.titre4 {
+  margin-left: 120px;
+  color: red;
+}
+
+.boutton {
+  margin-left: 40%;
+}
+
+.Veilletech {
+  width: 200px;
+  height: 50px;
+  background: #cdbfea;
+  color: #3c055e;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Veilletech:active {
+  transform: translate(2px);
+  box-shadow: 0 5px 10px rgb(156, 89, 89);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .veille {
+      padding: 2rem 1rem;
+      width: 90%;
+  }
+
+  nav ul li a {
+      padding: 12px;
+      font-size: 16px;
+  }
+
+  .explication1 {
+      padding: 3%;
+  }
+
+  .titre4 {
+      margin-left: 60px;
+  }
+
+  .boutton {
+      margin-left: 20%;
+  }
+
+  .Veilletech {
+      width: 150px;
+      height: 40px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .veille {
+      padding: 1rem 0.5rem;
+      width: 100%;
+  }
+
+  nav ul li a {
+      padding: 10px;
+      font-size: 14px;
+  }
+
+  .titre4 {
+      margin-left: 20px;
+      text-align: center;
+  }
+
+  .boutton {
+      margin-left: 10%;
+  }
+
+  .Veilletech {
+      width: 120px;
+      height: 35px;
+      font-size: 12px;
+  }
+}

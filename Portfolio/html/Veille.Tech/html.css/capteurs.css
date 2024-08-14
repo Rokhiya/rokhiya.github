@@ -1,0 +1,65 @@
+html {
+  height: 100%; /* Réduit la hauteur pour éviter le défilement excessif */
+  background: radial-gradient(rgb(247, 247, 247), rgb(133, 133, 246));
+}
+
+body {
+  margin: 0; /* Évite les marges par défaut du navigateur */
+  padding: 0; /* Évite les espacements par défaut du navigateur */
+  color: #292f36;
+  font-family: Helvetica, Arial, sans-serif; /* Ajoute des polices de secours */
+  line-height: 1.6; /* Améliore la lisibilité du texte */
+}
+
+/* Barre de navigation */
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0; /* Réduit le padding pour une apparence plus compacte */
+}
+
+nav ul {
+  list-style: none; /* Retire les puces des listes */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(7, 7, 7, 0) 0%, rgba(255, 255, 255, 0.2) 25%, rgba(255, 255, 255, 0.41) 75%, rgba(255, 255, 255, 0) 100%);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px; /* Ajoute un petit espacement entre les éléments de menu */
+}
+
+nav ul li a {
+  padding: 15px; /* Réduit le padding pour une meilleure adaptabilité */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: rgba(32, 63, 106, 0.7); /* Ajuste la couleur pour une meilleure lisibilité */
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s, color 0.3s; /* Ajoute une transition douce */
+}
+
+nav ul li a:hover {
+  background: rgba(246, 246, 249, 0.1);
+  color: rgba(3, 3, 3, 0.9); /* Augmente l'opacité au survol */
+}
+
+/* Capteurs */
+
+.capteurs {
+  margin: 0 auto;
+  padding: 4rem 2rem; /* Ajoute un padding en haut/bas et réduit les côtés */
+  width: 960px;
+  max-width: 100%;
+  text-align: justify;
+}
+
+@media only screen and (max-width: 960px) {
+  .capteurs {
+    padding: 2rem 1rem; /* Ajuste le padding pour les petits écrans */
+  }
+}

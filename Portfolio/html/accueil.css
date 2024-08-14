@@ -1,0 +1,151 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background: rgb(6, 6, 6);
+}
+
+/* Rokhiya Touré */
+p {
+  float: left;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Menu */
+nav {
+  max-width: 9000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+nav ul {
+  text-align: center;
+  background: radial-gradient(rgba(210, 210, 134, 0.951), #ba7777);
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 18px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: rgba(32, 63, 106, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  background: rgba(246, 246, 249, 0.1);
+  color: rgba(3, 3, 3, 0.7);
+}
+
+/* My Portfolio */
+.titre {
+  background: linear-gradient(rgb(214, 214, 100), #cb6d6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  float: right;
+  padding-right: 100px;
+  margin-top: 10px;
+  margin-right: 230px;
+}
+
+/* Texte d'introduction */
+.intro {
+  float: right;
+  margin: 110px;
+  margin-top: -10px;
+  font-size: 17px;
+  color: rgb(210, 210, 134);
+  text-align: justify;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .titre {
+      font-size: 50px;
+      margin-right: 100px;
+  }
+
+  .intro {
+      margin: 60px;
+      font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  nav ul li {
+      display: block;
+      margin-bottom: 10px;
+  }
+
+  nav ul {
+      background: radial-gradient(rgba(210, 210, 134, 0.951), #ba7777);
+  }
+
+  .titre {
+      font-size: 40px;
+      float: none;
+      margin-right: 0;
+      text-align: center;
+  }
+
+  .intro {
+      float: none;
+      margin: 30px;
+      font-size: 14px;
+      text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titre {
+      font-size: 30px;
+      margin-right: 0;
+      padding-right: 0;
+  }
+
+  .intro {
+      margin: 20px;
+      font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+      background: rgb(0, 0, 0); /* Ajuster le fond pour les très petits écrans */
+  }
+
+  .titre {
+      font-size: 24px;
+      padding-right: 0;
+      margin-right: 0;
+      text-align: center;
+  }
+
+  .intro {
+      margin: 10px;
+      font-size: 11px;
+  }
+
+  p {
+      float: none;
+      text-align: center;
+      margin: 20px 0;
+  }
+
+  nav ul {
+      padding: 10px 0;
+  }
+
+  nav ul li a {
+      padding: 10px;
+      font-size: 16px;
+  }
+}

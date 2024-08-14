@@ -1,0 +1,141 @@
+/* Barre de navigation */
+
+nav {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0; /* Réduit le padding pour une apparence plus compacte */
+  position: relative; /* Enlève la marge négative */
+}
+
+nav ul {
+  list-style: none; /* Retire les puces des listes */
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(117, 113, 113, 0) 0%, rgba(132, 91, 91, 0.2) 25%, rgba(175, 134, 134, 0.41) 75%, rgba(187, 183, 183, 0) 100%);
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 5px; /* Ajoute un petit espacement entre les éléments de menu */
+}
+
+nav ul li a {
+  padding: 15px; /* Réduit le padding pour une meilleure adaptabilité */
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  color: rgba(84, 111, 153, 0.7); /* Ajuste la couleur pour une meilleure lisibilité */
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  transition: background 0.3s, color 0.3s; /* Ajoute une transition douce */
+}
+
+nav ul li a:hover {
+  background: rgba(246, 246, 249, 0.1);
+  color: rgba(3, 3, 3, 0.9); /* Augmente l'opacité au survol */
+}
+
+/* Styles de base du corps */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7c6f2;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  line-height: 1.6; /* Améliore la lisibilité */
+}
+
+/* Formulaire visuel */
+
+form {
+  padding: 40px;
+  background-color: white;
+  border-radius: 30px;
+  max-width: 600px; /* Définit une largeur maximale pour le formulaire */
+  margin: 50px auto; /* Centre le formulaire horizontalement avec un espacement vertical */
+}
+
+/* Contactez-nous */
+
+form h1 {
+  font-size: 24px; /* Augmente la taille du titre pour le rendre plus visible */
+  margin-bottom: 20px; /* Ajoute un espace en bas du titre */
+}
+
+/* Barre de séparation */
+
+form .separation {
+  width: 100%;
+  height: 2px;
+  background-color: #747cdf;
+  margin: 20px 0; /* Ajoute un espacement vertical autour de la barre */
+}
+
+/* Largeur du formulaire */
+
+form .corps-formulaire {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Ajoute un espacement entre les éléments du formulaire */
+}
+
+/* Groupes de champs */
+
+form .corps-formulaire .groupe {
+  flex: 1 1 100%; /* Les groupes prennent toute la largeur disponible */
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Champs de saisie */
+
+.gauche .groupe input,
+.corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #939191;
+}
+
+/* Champs de texte */
+
+.gauche .groupe input {
+  background-color: #fff;
+}
+
+.corps-formulaire .droite .groupe textarea {
+  background-color: #f1f1f1;
+  border: 2px solid #747cdf;
+  outline: none;
+  resize: none;
+  height: 150px; /* Définit une hauteur fixe pour la zone de texte */
+}
+
+/* Bouton d'envoi */
+
+.envoyer button {
+  margin-top: 10px;
+  background-color: #747cdf;
+  color: rgb(248, 246, 246);
+  font-size: 15px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s; /* Réduit le temps de transition pour un effet plus rapide */
+}
+
+.envoyer button:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+@media screen and (max-width: 920px) {
+  form .corps-formulaire .droite {
+    margin-left: 0; /* Réinitialise l'espacement gauche sur les petits écrans */
+  }
+}

@@ -1,0 +1,162 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(6, 6, 6);
+}
+
+/* Rokhiya Touré */
+p {
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Menu */
+nav {
+    max-width: 9000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+nav ul {
+    text-align: center;
+    background: radial-gradient(rgba(210, 210, 134, 0.951), #ba7777);
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    color: rgba(32, 63, 106, 0.5);
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul li a:hover {
+    background: rgba(246, 246, 249, 0.1);
+    color: rgba(3, 3, 3, 0.7);
+}
+
+/* Formulaire visuel */
+form {
+    padding: 40px;
+    background-color: white;
+    border-radius: 30px;
+    max-width: 450px; /* Définir une largeur maximale */
+    margin: 0 auto; /* Centrer le formulaire */
+    margin-top: 100px;
+}
+
+/* Contactez-nous */
+form h1 {
+    font-size: 20px;
+    text-align: center; /* Centrer le titre */
+}
+
+/* Barre de séparation */
+form .separation {
+    width: 100%;
+    height: 2px;
+    background-color: #747cdf;
+    margin: 20px 0; /* Espacement autour de la séparation */
+}
+
+/* Largeur du formulaire */
+form .corps-formulaire {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+/* Groupes */
+form .corps-formulaire .groupe {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Prendre toute la largeur */
+}
+
+.gauche .groupe input {
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #939191;
+    border-radius: 5px;
+}
+
+/* Case du message */
+.corps-formulaire .droite .groupe {
+    height: 100%;
+}
+
+.corps-formulaire .droite .groupe textarea {
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 2px solid #747cdf;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+    height: 72%;
+}
+
+/* Envoyer le message */
+.envoyer button {
+    margin-top: 10px;
+    background-color: #747cdf;
+    color: rgb(248, 246, 246);
+    font-size: 15px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.envoyer button:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 920px) {
+    form .corps-formulaire {
+        flex-direction: column; /* Organiser les éléments en colonne */
+    }
+
+    form .corps-formulaire .droite {
+        margin-left: 0px;
+        width: 100%; /* Prendre toute la largeur */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Réduire la taille du formulaire pour les petits écrans */
+    form {
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    form h1 {
+        font-size: 18px;
+    }
+
+    form .corps-formulaire .groupe {
+        margin-top: 10px;
+    }
+
+    .gauche .groupe input, .corps-formulaire .droite .groupe textarea {
+        padding: 8px 5px;
+    }
+
+    .envoyer button {
+        width: 100%; /* Le bouton prend toute la largeur */
+        font-size: 14px;
+        padding: 8px;
+    }
+}
